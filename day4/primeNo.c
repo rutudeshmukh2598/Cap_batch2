@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-  int no=7;
+  int no=14;
   int temp=0;
   for(int i=2;i<=no-1;i++)
   {
