@@ -15,6 +15,9 @@
       printf("\n contents of ptr=%u",ptr);
       printf("\n a=%d\n",*ptr);
       
+      *ptr=20;
+      printf("\na=%d\n",*ptr);
+      
       printf("\n\n");
       return 0;
       }
