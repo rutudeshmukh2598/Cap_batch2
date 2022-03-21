@@ -12,6 +12,12 @@
     }
     calling a function
     func_name(args_value);
+    
+   
+   two type of function
+   1.call by value .....pass the values
+   2.call by reference/address //pass the address of reference of the      variables
+   
     */
     #include<stdio.h>
     
@@ -27,7 +33,7 @@
       float r_div=0.0;
       r_add=addition(a,b); //calling a function
       
-      r_sub=Sub(a,b);
+      r_sub=Sub(a,b); //its call by value
       
       r_mul=Mul(a,b);
       r_div=Div(a,b);
