@@ -14,7 +14,7 @@ demo linked list
    
    int main()
    {
-     LIST n1,n2,n3;  //create a variable
+     LIST n1,n2,n3,n4;  //create a variable
      LIST *pn;
      LIST temp;
      
@@ -31,38 +31,27 @@ demo linked list
      
      n1.ptr=&n2; 
      n2.ptr=&n3;
+     head=&n 1;
+     temp=head;
      
-     pn=&n1;
-     printf("\n%d",n1.val);
-     printf("\n %d->",pn->val);
+     display(temp);
      
-    // pn=&n2;
-   // pn=n1.ptr;
-     temp = temp->ptr;
+     n4.val=40;
+     n4.ptr=NULL;
      
-     printf("\n %d->",temp->val);
-     
-     //pn=&n3;
-     //pn=n2.ptr;
-     temp=temp->ptr;
-     
-     printf("\n %d->",temp->val);
-     printf("\nNULL\n");
-     if(temp==NULL){
-     
-     printf("\nReached to the end of list");
-     printf("\nReprinting the list using loop\n");
+     n1.ptr=&n4;
+     n4.ptr=&n2;
      
      temp=head;
      
-     while (temp!=NULL)
-     printf("\n%d",temp->val);
-     temp=temp
+     printf("\nAfter inserting new node n4\n");
+     dispList(temp);
      
-     }
+     
+     
+     
+     printf("\n\n");
      return 0;
-     
-     
      }
      void dispList(LIST *h)
      {

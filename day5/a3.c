@@ -1,5 +1,5 @@
 #include<stdio.h>
-extern int Cap;
+extern int Cap
    int main()
    {
       int arr[Cap];
