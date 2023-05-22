@@ -387,7 +387,7 @@ double cyclometricComplex(vector<string> cyclometric)
 int checkValuesOfThefile(string dir_path,string en1,unordered_set<string> &keywords)
 {
 			ifstream myfile;
-			string en2=dir_path+en1;//allfies/a.java
+			string en2=dir_path+en1;//allfies//java1/a.java
 			cout<<en2<<" file path\n";
  			myfile.open(en2,ios::in);
 
