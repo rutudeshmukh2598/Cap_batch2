@@ -387,7 +387,7 @@ double cyclometricComplex(vector<string> cyclometric)
 int checkValuesOfThefile(string dir_path,string en1,unordered_set<string> &keywords)
 {
 			ifstream myfile;
-			string en2=dir_path+en1;//allfies//java1/a.java
+			string en2=dir_path+en1;//allfies/a.cpp
 			cout<<en2<<" file path\n";
  			myfile.open(en2,ios::in);
 
@@ -645,7 +645,7 @@ void checkDir(string dir_path,string en1,unordered_set<string> &keywords)
 		{
 			en2=en->d_name;
 			cout<<":"<<en2<<":";
-			if( (en2.find(".java") != -1))//only read cpp
+			if( (en2.find(".cpp") != -1))//only read cpp
 			{
 				checkValuesOfThefile(path,en2,keywords);
 
@@ -750,7 +750,7 @@ int main(int argc,char* argv[])
 		{
 			en1=en->d_name;
 			cout<<":"<<en1<<":";
-			if( (en1.find(".java") != -1))//only read cpp
+			if( (en1.find(".cpp") != -1))//only read cpp
 			{
 				checkValuesOfThefile(dir_path1,en1,keywords);
 			}
